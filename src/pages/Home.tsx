@@ -86,7 +86,7 @@ const Home: React.FC = () => {
             </header>
 
             <ContainerContent>
-                <ContentForm>
+                <ContentForm errorFirstName={!!firstNameinputError} errorLastName={!!lastNameinputError} errorPhone={!!phoneInputError}>
                     <form onSubmit={handleFormSubmit}>
                         <label htmlFor="FirstName">
                             <p>First name</p>

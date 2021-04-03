@@ -1,4 +1,18 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
+
+interface IErrorInput {
+    errorFirstName: boolean
+    errorLastName: boolean
+    errorPhone: boolean
+}
+
+// interface IErrorLastName {
+//     errorLastName: boolean
+// }
+
+// interface IErrorPhone {
+//     errorPhone: boolean
+// }
 
 export const Container = styled.div`
 `
@@ -33,7 +47,7 @@ export const ContainerContent = styled.div`
     margin-top: 60px;
 `
 
-export const ContentForm = styled.div`
+export const ContentForm = styled.div<IErrorInput>`
     display: flex;
     
     form {
@@ -60,6 +74,24 @@ export const ContentForm = styled.div`
 
             font-size: 18px;
             font-weight: normal;
+        }
+
+        & label #FirstName {
+                ${(props) => props.errorFirstName && css`
+                    border: 4px solid #C53030;
+                `}
+        }
+
+        & label #LastName {
+            ${(props) => props.errorLastName && css`
+            border: 4px solid #C53030;
+            `}
+        }
+
+        & label #Phone {
+            ${(props) => props.errorPhone && css`
+                border: 4px solid #C53030;
+            `}
         }
 
         button {
