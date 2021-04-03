@@ -28,8 +28,6 @@ The best place to manage your contacts
   </a>
 </p>
 
-
-
 <p align="center">
   <a href="#project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#rocket-Technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -39,7 +37,9 @@ The best place to manage your contacts
   <a href="#memo-license">License</a>
 </p>
 
-<div align="center">
+<p align="center">
+  <img src="./src/assets/demo.gif" alt="gif demo"> 
+</p>
 
 ## Project
 
