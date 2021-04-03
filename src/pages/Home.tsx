@@ -1,4 +1,4 @@
-import React, { FormEvent, useState } from 'react'
+import React, { FormEvent, useEffect, useState } from 'react'
 
 import { FiBook, FiUser } from 'react-icons/fi'
 import { 
@@ -30,7 +30,16 @@ const Home: React.FC = () => {
     const [firstName, setFirstName] = useState('')
     const [lastName, setLastName] = useState('')
     const [phone, setPhone] = useState('')
-    const [fullContact,  setFullContact] = useState<Contact[]>([])
+    const [fullContact,  setFullContact] = useState<Contact[]>(() => {
+        const storagedContacts = localStorage.getItem(
+          '@Phonebook:contacts',
+        );
+        if (storagedContacts) {
+            return JSON.parse(storagedContacts);
+          }
+          return [];
+    })
+
 
     function handleFormSubmit(event: FormEvent<HTMLFormElement>): void {
         event.preventDefault()
@@ -47,6 +56,13 @@ const Home: React.FC = () => {
         setLastName('')
         setPhone('')
     }
+
+    useEffect(() => {
+        localStorage.setItem(
+          '@Phonebook:contacts',
+          JSON.stringify(fullContact),
+        );
+      }, [fullContact]);
 
     return (
         <Container >
