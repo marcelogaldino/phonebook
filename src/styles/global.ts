@@ -14,14 +14,14 @@ export const GlobalStyle = createGlobalStyle`
    }
 
    #root {
-    max-width: 1440px;
-    height: 100vh;
-    margin: 0 auto;
-    padding: 40px 82px
+        max-width: 1440px;
+        height: 100vh;
+        margin: 0 auto;
+        padding: 40px 82px;
    }
 
    .flip-container {
-    perspective: 1000px;
+        perspective: 1000px;
 }
 
 .flip-container:hover .flipper{
