@@ -38,7 +38,7 @@ The best place to manage your contacts
 </p>
 
 <p align="center">
-  <img src="./src/assets/demo.gif" alt="gif demo"> 
+  <img src="https://raw.githubusercontent.com/marcelogaldino/phonebook/main/src/assests/demo.gif" width="600px"  alt="gif demo"> 
 </p>
 
 ## Project
