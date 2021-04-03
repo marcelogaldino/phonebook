@@ -19,35 +19,77 @@ export const TitleContainer = styled.div`
     height: 63px;
     color: #b66e1e;
   }
+
+  @media (max-width: 560px) {
+    svg {
+      width: 48px;
+      height: 48px;
+    }
+  }
+
+  @media (max-width: 380px) {
+    width: 155px;
+
+    svg {
+      width: 36px;
+      height: 36px;
+    }
+  }
 `
 
 export const Title = styled.div`
-  font-size: 48px;
+  font-size: 4.8rem;
   font-weight: bold;
   color: #b66e1e;
   align-self: center;
+
+  @media (max-width: 560px) {
+    font-size: 3.8rem;
+  }
+
+  @media (max-width: 380px) {
+    font-size: 2.4rem;
+  }
 `
 export const HeaderDescription = styled.div`
   color: #ffffff;
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: normal;
   text-align: center;
-  margin-top: 12px;
+  margin-top: 1.2rem;
+
+  @media (max-width: 380px) {
+    width: 136px;
+    margin-left: 2rem;
+    font-size: 1.7rem;
+    margin-top: 0.6rem;
+  }
 `
 
 export const ContainerContent = styled.div`
-  margin-top: 60px;
+  margin-top: 6rem;
 `
 
 export const ContentForm = styled.div<IErrorInput>`
   display: flex;
+
+  @media (max-width: 1333px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media (max-width: 380px) {
+    margin-left: 8rem;
+  }
+
   form {
     p {
-      font-size: 24px;
+      font-size: 2.4rem;
       font-weight: bold;
       color: #f58f4b;
 
-      margin-bottom: 8px;
+      margin-bottom: 0.8rem;
     }
 
     input {
@@ -58,9 +100,9 @@ export const ContentForm = styled.div<IErrorInput>`
       border: 1px solid #000000;
       box-shadow: -2px 4px 4px 1px rgba(0, 0, 0, 0.8);
       border-radius: 8px;
-      margin-bottom: 36px;
-      padding: 12px 0 12px 21px;
-      font-size: 18px;
+      margin-bottom: 3.6rem;
+      padding: 1.2rem 0 1.2rem 2.1rem;
+      font-size: 1.8rem;
       font-weight: normal;
     }
 
@@ -85,13 +127,12 @@ export const ContentForm = styled.div<IErrorInput>`
     button {
       display: block;
       width: 210px;
-      height: 43;
-      padding: 18px;
+      padding: 1.8rem;
       background: #b66e1e;
       color: #000000;
-      font-size: 18px;
+      font-size: 1.8rem;
       font-weight: 600;
-      margin-left: 104px;
+      margin-left: 10.4rem;
       cursor: pointer;
       border: 1px solid #000000;
       box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
@@ -101,13 +142,52 @@ export const ContentForm = styled.div<IErrorInput>`
         filter: opacity(0.9);
       }
     }
+
+    @media (max-width: 380px) {
+      p {
+        font-size: 2.2rem;
+        margin-bottom: 0.6rem;
+      }
+
+      input {
+        width: 400px;
+        height: 40px;
+        margin-bottom: 3.2rem;
+        margin-right: 2rem;
+        padding: 0.8rem 0 0.8rem 1.8rem;
+        font-size: 1.6rem;
+      }
+
+      button {
+        width: 180px;
+        padding: 1.6rem;
+        font-size: 1.6rem;
+        margin-left: 12.5rem;
+      }
+    }
   }
 `
 
 export const FlipeContainer = styled.div`
   width: 776px;
   height: 392px;
-  margin-left: 80px;
+  margin-left: 8rem;
+
+  @media (max-width: 1333px) {
+    margin-top: 4rem;
+    margin-left: 0;
+  }
+
+  @media (max-width: 840px) {
+    width: 410px;
+    height: 236px;
+  }
+
+  @media (max-width: 380px) {
+    width: 410px;
+    height: 236px;
+    margin-right: 2rem;
+  }
 `
 
 export const FlipeContainerSide = styled.div`
@@ -121,6 +201,11 @@ export const FlipeContainerSide = styled.div`
 
   svg {
     color: white;
+  }
+
+  @media (max-width: 840px) {
+    width: 82.5px;
+    height: 236px;
   }
 `
 
@@ -149,7 +234,7 @@ export const CardBack = styled.div`
   }
 
   p {
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: bold;
   }
 `
@@ -160,31 +245,42 @@ export const TextContainer = styled.div`
 
 export const CardText = styled.p`
   color: #47263b;
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: bold;
-  margin: 39px 0 12px 16px;
+  margin: 3.9rem 0 1.2rem 1.6rem;
+
+  @media (max-width: 840px) {
+    font-size: 1.6rem;
+    margin: 2.2rem 0 1rem 1.2rem;
+  }
 `
 
 export const CardTextInput = styled.input`
   background: #e1e1e1;
-  padding: 12px;
-  margin-left: 16px;
-  font-size: 18px;
+  padding: 1.2rem;
+  margin-left: 1.6rem;
+  font-size: 1.8rem;
   font-weight: normal;
   color: #000000;
   border: none;
+
+  @media (max-width: 840px) {
+    padding: 0.8rem;
+    margin-left: 1.2rem;
+    font-size: 1.4rem;
+  }
 `
 
 export const TableContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 136px;
+  margin-top: 13.6rem;
 
   table > thead > tr > th {
     color: #ffffff;
-    padding: 12px 160px;
-    font-size: 22px;
+    padding: 1.2rem 16rem;
+    font-size: 2.2rem;
     font-weight: bold;
     background: #47263b;
   }
@@ -192,14 +288,64 @@ export const TableContainer = styled.div`
   td {
     color: #ffffff;
     text-align: center;
-    font-size: 24px;
+    font-size: 2.4rem;
     font-weight: bold;
-    padding: 12px;
+    padding: 1.2rem;
+  }
+
+  @media (max-width: 1333px) {
+    table > thead > tr > th {
+      padding: 1rem 12rem;
+      font-size: 1.8rem;
+    }
+
+    td {
+      font-size: 2.2rem;
+      padding: 1rem;
+    }
+  }
+
+  @media (max-width: 840px) {
+    table > thead > tr > th {
+      padding: 0.6rem 10rem;
+      font-size: 1.4rem;
+    }
+
+    td {
+      font-size: 2rem;
+      padding: 0.9rem;
+    } 
+  }
+
+  @media (max-width: 560px) {
+    table > thead > tr > th {
+      padding: 0.4rem 8rem;
+      font-size: 1.2rem;
+    }
+
+    td {
+      font-size: 1.8rem;
+      padding: 0.8rem;
+    } 
+  }
+
+  @media (max-width: 380px) {
+    padding-left: 6rem;
+    table > thead > tr > th {
+      padding: 0.3rem 6rem;
+      font-size: 1rem;
+      /* margin-left: -8rem; */
+    }
+
+    td {
+      font-size: 1.6rem;
+      padding: 0.6rem;
+    } 
   }
 `
 
 export const Error = styled.span`
   display: block;
   color: #c53030;
-  margin: 4px 0;
+  margin: 0.4rem 0;
 `

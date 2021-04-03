@@ -7,22 +7,40 @@ export const GlobalStyle = createGlobalStyle`
        padding: 0;
        outline: 0;
        box-sizing: border-box;
-   } 
+   }
+
+   html {
+      font-size: 62.5%;
+   }
+
+   @media (max-width: 1421px) {
+     html {
+       font-size: 58%;
+     }
+   }
+
+   @media (max-width: 720px) {
+     html {
+       font-size: 54%;
+       padding: 20px 42px;
+     }
+   }
 
    body {
-       background: #010035;
-       font-family: 'Raleway', sans-serif;
+      background: #010035;
+      font-family: 'Raleway', sans-serif;
    }
 
    #root {
-        max-width: 1440px;
-        height: 100vh;
-        margin: 0 auto;
-        padding: 40px 82px;
+      width: 100%;
+      max-width: 1440px;
+      height: 100vh;
+      margin: 0 auto;
+      padding: 40px 82px;
    }
 
    .flip-container {
-        perspective: 1000px;
+      perspective: 1000px;
 }
 
 .flip-container:hover .flipper{
