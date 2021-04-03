@@ -16,7 +16,8 @@ import {
     TextContainer,
     CardText,
     CardTextInput,
-    TableContainer
+    TableContainer,
+    Error
 } from './styles'
 
 interface Contact {
@@ -27,6 +28,9 @@ interface Contact {
 }
 
 const Home: React.FC = () => {
+    const [firstNameinputError, setFirstNameInputError] = useState('')
+    const [lastNameinputError, setLastNameInputError] = useState('')
+    const [phoneInputError, setPhoneInputError] = useState('')
     const [firstName, setFirstName] = useState('')
     const [lastName, setLastName] = useState('')
     const [phone, setPhone] = useState('')
@@ -48,7 +52,14 @@ const Home: React.FC = () => {
 
         const contact: Contact = {id, firstName, lastName, phone}
 
-        if (!firstName || !lastName || !phone) return alert('Preencha os campos vazios') 
+        if (!firstName) return setFirstNameInputError('Type your first name!')
+        setFirstNameInputError('')
+        
+        if (!lastName) return setLastNameInputError('Type your last name!') 
+        setLastNameInputError('')
+
+        if (!phone) return setPhoneInputError('Type your phone number') 
+        setPhoneInputError('')
 
         setFullContact([...fullContact, contact])
 
@@ -79,6 +90,7 @@ const Home: React.FC = () => {
                     <form onSubmit={handleFormSubmit}>
                         <label htmlFor="FirstName">
                             <p>First name</p>
+                            {firstNameinputError && <Error>{firstNameinputError}</Error>}
                             <input 
                                 type="text" 
                                 onChange={(e: React.ChangeEvent<HTMLInputElement>,): void => setFirstName(e.target.value)}
@@ -89,6 +101,7 @@ const Home: React.FC = () => {
 
                         <label htmlFor="LastName">
                             <p>Last name</p>
+                            {lastNameinputError && <Error>{lastNameinputError}</Error>}
                             <input 
                                 type="text" 
                                 onChange={(e: React.ChangeEvent<HTMLInputElement>,): void => setLastName(e.target.value)} 
@@ -99,6 +112,7 @@ const Home: React.FC = () => {
 
                         <label htmlFor="Phone">
                             <p>Phone</p>
+                            {phoneInputError && <Error>{phoneInputError}</Error>}
                             <input 
                                 type="text" 
                                 onChange={(e: React.ChangeEvent<HTMLInputElement>,): void => setPhone(e.target.value)}

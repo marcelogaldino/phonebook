@@ -185,5 +185,11 @@ export const TableContainer = styled.div`
         font-weight: bold;
         padding: 12px;
     }
+`
+
+export const Error = styled.span`
+    display: block;
+    color: #C53030;
+    margin: 4px 0;
 
 `
