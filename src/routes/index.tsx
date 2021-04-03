@@ -5,12 +5,12 @@ import Home from '../pages/Home'
 import { GlobalStyle } from '../styles/global'
 
 const Routes: React.FC = () => (
-    <>
-        <Switch>
-            <Route path='/' exact  component={Home}></Route>
-        </Switch>
-        <GlobalStyle />
-    </>
+  <>
+    <Switch>
+      <Route path="/" exact component={Home} />
+    </Switch>
+    <GlobalStyle />
+  </>
 )
 
 export default Routes

@@ -2,7 +2,7 @@
 The best place to manage your contacts
 
 <h1 align="center">
-    <img alt="logo" title="#PhoneBook" src="./src/assets/book.svg" width="380px" />
+    <img alt="logo" title="#PhoneBook" src="https://raw.githubusercontent.com/marcelogaldino/phonebook/67789fc267502974a7f91e529009bc06a4c1d910/src/assests/book.svg" width="180px" />
 </h1>
 
 <h4 align="center"> 
@@ -28,6 +28,8 @@ The best place to manage your contacts
   </a>
 </p>
 
+
+
 <p align="center">
   <a href="#project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#rocket-Technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -47,8 +49,7 @@ Phone Book is a project that helps you manage all your contacts in a easily and 
 
 This project was developed with the following technologies:
 
-- [Typescript][typescript]
-- [ReactJS][react]
+ [Typescript][typescript] and [ReactJS][react]
 
 ## Try it now
 
