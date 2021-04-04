@@ -7,7 +7,13 @@ interface IErrorInput {
   errorPhone: boolean
 }
 
-export const Container = styled.div``
+export const Container = styled.div`
+  @media (max-width: 380px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+`
 
 export const TitleContainer = styled.div`
   display: flex;
@@ -150,10 +156,10 @@ export const ContentForm = styled.div<IErrorInput>`
       }
 
       input {
-        width: 400px;
+        width: 350px;
         height: 40px;
         margin-bottom: 3.2rem;
-        margin-right: 2rem;
+        margin-right: 8rem;
         padding: 0.8rem 0 0.8rem 1.8rem;
         font-size: 1.6rem;
       }
@@ -162,7 +168,7 @@ export const ContentForm = styled.div<IErrorInput>`
         width: 180px;
         padding: 1.6rem;
         font-size: 1.6rem;
-        margin-left: 12.5rem;
+        margin-left: 9.5rem;
       }
     }
   }
@@ -184,9 +190,9 @@ export const FlipeContainer = styled.div`
   }
 
   @media (max-width: 380px) {
-    width: 410px;
+    width: 350px;
     height: 236px;
-    margin-right: 2rem;
+    margin-right: 8rem;
   }
 `
 
@@ -307,7 +313,7 @@ export const TableContainer = styled.div`
 
   @media (max-width: 840px) {
     table > thead > tr > th {
-      padding: 0.6rem 10rem;
+      padding: 0.6rem 9rem;
       font-size: 1.4rem;
     }
 
@@ -319,7 +325,7 @@ export const TableContainer = styled.div`
 
   @media (max-width: 560px) {
     table > thead > tr > th {
-      padding: 0.4rem 8rem;
+      padding: 0.4rem 7rem;
       font-size: 1.2rem;
     }
 
@@ -331,8 +337,13 @@ export const TableContainer = styled.div`
 
   @media (max-width: 380px) {
     padding-left: 6rem;
+
+    table {
+      margin-left: -6.5rem;
+    }
+
     table > thead > tr > th {
-      padding: 0.3rem 6rem;
+      padding: 0.3rem 5.5rem;
       font-size: 1rem;
       /* margin-left: -8rem; */
     }
