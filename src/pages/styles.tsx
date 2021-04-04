@@ -8,10 +8,11 @@ interface IErrorInput {
 }
 
 export const Container = styled.div`
-  @media (max-width: 380px) {
+  @media (max-width: 490px) {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
 `
 
@@ -33,7 +34,7 @@ export const TitleContainer = styled.div`
     }
   }
 
-  @media (max-width: 380px) {
+  @media (max-width: 490px) {
     width: 155px;
 
     svg {
@@ -64,7 +65,7 @@ export const HeaderDescription = styled.div`
   text-align: center;
   margin-top: 1.2rem;
 
-  @media (max-width: 380px) {
+  @media (max-width: 490px) {
     width: 136px;
     margin-left: 2rem;
     font-size: 1.7rem;
@@ -85,7 +86,7 @@ export const ContentForm = styled.div<IErrorInput>`
     justify-content: center;
   }
 
-  @media (max-width: 380px) {
+  @media (max-width: 490px) {
     margin-left: 8rem;
   }
 
@@ -149,7 +150,7 @@ export const ContentForm = styled.div<IErrorInput>`
       }
     }
 
-    @media (max-width: 380px) {
+    @media (max-width: 490px) {
       p {
         font-size: 2.2rem;
         margin-bottom: 0.6rem;
@@ -189,7 +190,7 @@ export const FlipeContainer = styled.div`
     height: 236px;
   }
 
-  @media (max-width: 380px) {
+  @media (max-width: 490px) {
     width: 350px;
     height: 236px;
     margin-right: 8rem;
@@ -335,7 +336,7 @@ export const TableContainer = styled.div`
     } 
   }
 
-  @media (max-width: 380px) {
+  @media (max-width: 490px) {
     padding-left: 6rem;
 
     table {
