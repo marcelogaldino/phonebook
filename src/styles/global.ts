@@ -30,14 +30,14 @@ export const GlobalStyle = createGlobalStyle`
    @media (max-width: 380px) {
      html {
        font-size: 50%;
-       padding: 10px 16px;
-       margin-left: 6rem;
+       /* padding: 10px 16px; */
      }
    }
 
    body {
       background: #010035;
       font-family: 'Raleway', sans-serif;
+      -webkit-font-smoothing: antialiased; 
    }
 
    #root {
