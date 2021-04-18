@@ -1,14 +1,7 @@
-/* eslint-disable prettier/prettier */
-import styled, { css } from 'styled-components'
-
-interface IErrorInput {
-  errorFirstName: boolean
-  errorLastName: boolean
-  errorPhone: boolean
-}
+import styled from 'styled-components'
 
 export const Container = styled.div`
-  @media (max-width: 490px) {
+  @media (max-width: 790px) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -50,8 +43,12 @@ export const Title = styled.div`
   color: #b66e1e;
   align-self: center;
 
-  @media (max-width: 560px) {
+  @media (max-width: 590px) {
     font-size: 3.8rem;
+  }
+
+  @media (max-width: 560px) {
+    font-size: 2.4rem;
   }
 
   @media (max-width: 380px) {
@@ -64,6 +61,14 @@ export const HeaderDescription = styled.div`
   font-weight: normal;
   text-align: center;
   margin-top: 1.2rem;
+  margin-left: 2.8rem;
+
+  @media (max-width: 590px) {
+    width: 100%;
+    margin-left: 2.2rem;
+    font-size: 2rem;
+    margin-top: 0.8rem;
+  }
 
   @media (max-width: 490px) {
     width: 136px;
@@ -75,15 +80,25 @@ export const HeaderDescription = styled.div`
 
 export const ContainerContent = styled.div`
   margin-top: 6rem;
+
+  @media (max-width: 380px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 `
 
-export const ContentForm = styled.div<IErrorInput>`
+export const ContentForm = styled.div`
   display: flex;
 
   @media (max-width: 1333px) {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    p {
+      margin-left: 2.2rem;
+    }
   }
 
   @media (max-width: 490px) {
@@ -99,77 +114,29 @@ export const ContentForm = styled.div<IErrorInput>`
       margin-bottom: 0.8rem;
     }
 
-    input {
-      width: 420px;
-      height: 45px;
-
-      background: #ffffff;
-      border: 1px solid #000000;
-      box-shadow: -2px 4px 4px 1px rgba(0, 0, 0, 0.8);
-      border-radius: 8px;
-      margin-bottom: 3.6rem;
-      padding: 1.2rem 0 1.2rem 2.1rem;
-      font-size: 1.8rem;
-      font-weight: normal;
-    }
-
-    & label #FirstName {
-      ${props => props.errorFirstName && css`
-        border: 4px solid #c53030;
-      `}
-    }
-
-    & label #LastName {
-      ${props => props.errorLastName && css`
-        border: 4px solid #c53030;
-      `}
-    }
-
-    & label #Phone {
-      ${props => props.errorPhone && css`
-        border: 4px solid #c53030;
-      `}
-    }
-
-    button {
-      display: block;
-      width: 210px;
-      padding: 1.8rem;
-      background: #b66e1e;
-      color: #000000;
-      font-size: 1.8rem;
-      font-weight: 600;
-      margin-left: 10.4rem;
-      cursor: pointer;
-      border: 1px solid #000000;
-      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-      transition: opacity 0.3s;
-
-      &:hover {
-        filter: opacity(0.9);
+    @media (max-width: 700px) {
+      p {
+        font-size: 2.4rem;
+        font-weight: bold;
+        color: #f58f4b;
+        margin-bottom: -1.8rem;
+        margin-left: 0;
       }
     }
 
     @media (max-width: 490px) {
       p {
         font-size: 2.2rem;
-        margin-bottom: 0.6rem;
+        margin-bottom: -1.8rem;
+        margin-left: 0;
       }
+    }
 
-      input {
-        width: 350px;
-        height: 40px;
-        margin-bottom: 3.2rem;
-        margin-right: 8rem;
-        padding: 0.8rem 0 0.8rem 1.8rem;
+    @media (max-width: 380px) {
+      p {
         font-size: 1.6rem;
-      }
-
-      button {
-        width: 180px;
-        padding: 1.6rem;
-        font-size: 1.6rem;
-        margin-left: 9.5rem;
+        margin-bottom: -1.8rem;
+        margin-left: 0;
       }
     }
   }
@@ -193,7 +160,15 @@ export const FlipeContainer = styled.div`
   @media (max-width: 490px) {
     width: 350px;
     height: 236px;
-    margin-right: 8rem;
+    display: flex;
+    align-self: baseline;
+  }
+
+  @media (max-width: 380px) {
+    width: 280px;
+    height: 236px;
+    display: flex;
+    align-self: baseline;
   }
 `
 
@@ -321,7 +296,7 @@ export const TableContainer = styled.div`
     td {
       font-size: 2rem;
       padding: 0.9rem;
-    } 
+    }
   }
 
   @media (max-width: 560px) {
@@ -333,7 +308,7 @@ export const TableContainer = styled.div`
     td {
       font-size: 1.8rem;
       padding: 0.8rem;
-    } 
+    }
   }
 
   @media (max-width: 490px) {
@@ -346,18 +321,11 @@ export const TableContainer = styled.div`
     table > thead > tr > th {
       padding: 0.3rem 5.5rem;
       font-size: 1rem;
-      /* margin-left: -8rem; */
     }
 
     td {
       font-size: 1.6rem;
       padding: 0.6rem;
-    } 
+    }
   }
-`
-
-export const Error = styled.span`
-  display: block;
-  color: #c53030;
-  margin: 0.4rem 0;
 `
