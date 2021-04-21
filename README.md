@@ -9,7 +9,7 @@ The best place to manage your contacts
 
 <h2 align="center">
 <p>Acesse o layout, disponivel no Figma </p>
-<a href="https://www.figma.com/file/rfHof0vySAWkZqTggSiJ7p/Phone-Book?node-id=4%3A2"><img src="./src/assets/figma_logo.png"/>Figma Layout</a> 
+<a href="https://www.figma.com/file/rfHof0vySAWkZqTggSiJ7p/Phone-Book?node-id=4%3A2"><img width="400" height="400" src="https://raw.githubusercontent.com/marcelogaldino/phonebook/feat/animations/src/assests/figma_logo.png"/>Figma Layout</a> 
 </h2>
 
 <hr />
