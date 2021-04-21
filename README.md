@@ -5,15 +5,10 @@ The best place to manage your contacts
     <img alt="logo" title="#PhoneBook" src="https://raw.githubusercontent.com/marcelogaldino/phonebook/67789fc267502974a7f91e529009bc06a4c1d910/src/assests/book.svg" width="180px" />
 </h1>
 
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FrfHof0vySAWkZqTggSiJ7p%2FPhone-Book%3Fnode-id%3D4%253A2" allowfullscreen></iframe>
-
 <h2 align="center">
 <p>Acesse o layout, disponivel no Figma </p>
 <a href="https://www.figma.com/file/rfHof0vySAWkZqTggSiJ7p/Phone-Book?node-id=4%3A2"><img width="400" height="250" src="https://raw.githubusercontent.com/marcelogaldino/phonebook/feat/animations/src/assests/figma_logo.png"/></a> 
 </h2>
-
-<hr />
-<br />
 
 <h4 align="center"> 
 	Phone Book - The best place to manage your contacts 📘 💜
