@@ -14,6 +14,10 @@ export const TitleContainer = styled.div`
   align-items: center;
   justify-content: center;
 
+  animation-name: moveDown;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in;
+
   svg {
     width: 91px;
     height: 63px;
@@ -33,6 +37,18 @@ export const TitleContainer = styled.div`
     svg {
       width: 36px;
       height: 36px;
+    }
+  }
+
+  @keyframes moveDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-10rem);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0rem);
     }
   }
 `
@@ -63,6 +79,10 @@ export const HeaderDescription = styled.div`
   margin-top: 1.2rem;
   margin-left: 2.8rem;
 
+  animation-name: moveDown;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in;
+
   @media (max-width: 590px) {
     width: 100%;
     margin-left: 2.2rem;
@@ -76,15 +96,43 @@ export const HeaderDescription = styled.div`
     font-size: 1.7rem;
     margin-top: 0.6rem;
   }
+
+  @keyframes moveDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-10rem);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0rem);
+    }
+  }
 `
 
 export const ContainerContent = styled.div`
   margin-top: 6rem;
 
+  animation-name: moveRight;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+
   @media (max-width: 380px) {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  @keyframes moveRight {
+    0% {
+      opacity: 0;
+      transform: translateX(-10rem);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateX(0rem);
+    }
   }
 `
 
@@ -258,6 +306,22 @@ export const TableContainer = styled.div`
   align-items: center;
   justify-content: center;
   margin-top: 13.6rem;
+
+  animation-name: moveUp;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+
+  @keyframes moveUp {
+    0% {
+      opacity: 0;
+      transform: translateY(10rem);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0rem);
+    }
+  }
 
   table > thead > tr > th {
     color: #ffffff;
