@@ -1,10 +1,6 @@
 # Phone Book
 The best place to manage your contacts
 
-<h1 align="center">
-    <img alt="logo" title="#PhoneBook" src="https://raw.githubusercontent.com/marcelogaldino/phonebook/67789fc267502974a7f91e529009bc06a4c1d910/src/assests/book.svg" width="180px" />
-</h1>
-
 <h2 align="center">
 <p>Acesse o layout, disponivel no Figma </p>
 <a href="https://www.figma.com/file/rfHof0vySAWkZqTggSiJ7p/Phone-Book?node-id=4%3A2"><img width="400" height="250" src="https://raw.githubusercontent.com/marcelogaldino/phonebook/feat/animations/src/assests/figma_logo.png"/></a> 
